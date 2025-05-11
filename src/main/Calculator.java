@@ -16,7 +16,7 @@ public class Calculator {
 
     public double divide(double num1, double num2) throws ArithmeticException {
         if(num2 == 0){
-            System.out.println("Divisão por zero não é permitida");
+            throw new ArithmeticException("Divisão por zero é indefinida");
         }
         return  num1 / num2;
     }
